@@ -70,6 +70,18 @@ margin: 0;
 }
 
 
+.videos iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    padding-bottom: 20px;
+}
+
+.articleThumb {
+    width: 100%;
+    max-width: 250px;
+}
+
 /*Media query break point - small/ some large mobiles - 480px
 Body text: 16px or larger
 Headings: 20px or larger
