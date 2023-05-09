@@ -5,9 +5,16 @@ Body text: 14px or larger
 Headings: 18px or larger
 */
 
+/*GENERAL*/
+
 body {
 margin: 0;
-font-size: 16px;
+font-size: 20px;
+font-family: Roboto, Arial, Lato;
+}
+
+hr {
+    margin-top: 30px;
 }
 
 .nav { 
@@ -34,6 +41,7 @@ font-size: 16px;
 
 .about, .videos, .articles, .aside, .footer {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .videos { 
@@ -110,6 +118,22 @@ font-size: 16px;
     font-size: 32px;
 }
 
+h2 {
+    color: blue;
+    font-size: 30px;
+}
+
+/*CTA BUTTONS*/
+
+.button {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+    color: blue;
+}
+
 .socialBTN {
     padding: 10px;
 }
@@ -154,4 +178,9 @@ Headings: 32px or larger
 
 @media (min-width: 1200px) {
     
+/*IMAGES*/
+    .resources-bgImg1:hover {
+        background-image: url(/images/test2.png);
+        width: 40%;
+    }
 }
