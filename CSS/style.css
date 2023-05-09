@@ -7,6 +7,7 @@ Headings: 18px or larger
 
 body {
 margin: 0;
+font-size: 16px;
 }
 
 .nav { 
@@ -70,6 +71,8 @@ margin: 0;
 }
 
 
+/*VIDEOS*/
+
 .videos iframe {
     width: 100%;
     max-width: 560px;
@@ -77,10 +80,40 @@ margin: 0;
     padding-bottom: 20px;
 }
 
+/*IMAGES*/
+
 .articleThumb {
     width: 100%;
     max-width: 250px;
 }
+
+.resources-bgImg1 {
+    background-image: url(/images/test.jpg);
+}
+
+.reviews-bgImg1 {
+    background-image: url(/images/test.jpg);
+}
+
+.resources-bgImg1, .reviews-bgImg1 {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding: 30px 0;
+}
+
+/*TEXT*/
+
+.asidePara {
+    color: red;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+.socialBTN {
+    padding: 10px;
+}
+
 
 /*Media query break point - small/ some large mobiles - 480px
 Body text: 16px or larger
