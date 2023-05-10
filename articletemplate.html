@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/CSS/style.css" rel="stylesheet" type="text/css"/>
-    <title>About</title>
+    <title>HBS</title>
 </head>
 <body>
-       <!--
+    <!--
     MOBILE FIRST
     -->
     <div class="grid-container">
         <!--NAVIGATION-->
         <nav class="nav grid-item">
             <!--Logo-->
-            <img class="logo" src="" alt="Website logo"/>
+            <a href="/index.html"><img class="logo" src="" alt="Website logo"/></a>
             <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="/about.html">About</a></li>
                 <li><a href="/videos.html">Videos</a></li>
                 <li><a href="/articles.html">Articles</a></li>
                 <li><a href="/resources.html">Resources</a></li>
@@ -26,46 +26,41 @@
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
-        <!--HEADER-->
-        <header class="header grid-item">
-            <h1>About</h1>
-            <p class="para1">About us</p>
-        </header>
         <main class="main grid-item">
-            <section class="aboutVideos">
-                <!--Clickable image link-->
-                <a href="/videos.html" class="asidePara">
-                    <div class="videos-bgImg">
-                        <p>Videos</p>
-                    </div>
-                </a>
-            </section>
-            <section class="aboutArticles">
-                <!--Clickable image link-->
-                <a href="/articles.html" class="asidePara">
-                    <div class="articles-bgImg">
-                        <p>Articles</p>
-                    </div>
-                </a>
-            </section>
-            <section class="aboutResources resources">
-                <!--Clickable image link-->
-                <a href="/resources.html" class="asidePara">
-                    <div class="resources-bgImg">
-                        <p>Resources</p>
-                    </div>
-                </a>
-            </section>
-            <section class="aboutReviews reviews">
-                <!--Clickable image link-->
-                <a href="/reviews.html" class="asidePara">
-                    <div class="reviews-bgImg">
-                        <p>Reviews</p>
-                    </div>
-                </a>
-            </section>
+            <article class="articles">
+                <img src="./images/test2.png" alt="Article 2 image alt text"/>
+                <h3>Article 2 title</h3>
+                <h4>by..., published date...</h4>
+                <!--Summary-->
+                <p>Article 2 summary</p>
+                <p>Article main text</p>
+            </article>
         </main>
-        <!--FOOTER-->
+        <!--ASIDE-->
+        <aside class="aside grid-item">
+            <!--Resources-->
+            <!--Embed background image-->
+            <section class="grid-item">
+                <a href="/resources.html" class="asidePara">
+                    <div class="resources resources-bgImg1">
+                        <h5>Resources</h5>
+                        <p>Take a look</p>
+                        <a href="./resources.html">View resources</a>
+                    </div>
+                </a>
+            </section>
+            <!--Reviews/ testimonials-->
+            <!--Embed background image-->
+            <section class="grid-item">
+                <a href="/reviews.html" class="asidePara">
+                    <div class="reviews reviews-bgImg1">
+                        <h5>Reviews</h5>
+                        <p>Take a look</p>
+                        <a href="./reviews.html">View reviews</a>
+                    </div>
+                </a>
+            </section>
+        </aside>
         <footer class="footer grid-item">
             <!--Social media buttons-->
             <section class="social">
@@ -75,7 +70,7 @@
                 <a class="socialBTN" href="www.medium.com"><img src="./images/social/Medium.png" alt="Medium icon" width="40px"/></a>
             </section>
             <section class="logofooter">
-                <img class="logo" src="" alt="Website logo"/>
+                <img class="logo" src="./index.html" alt="Website logo"/>
             </section>
         </footer>
     </div>
