@@ -17,6 +17,7 @@ hr {
     margin-top: 30px;
 }
 
+/*NAVIGATION*/
 .nav { 
     grid-area: nav;
 }
@@ -29,6 +30,7 @@ hr {
     display: inline;
     padding: 20px;
 }
+
 
 .header { 
     grid-area: header;
