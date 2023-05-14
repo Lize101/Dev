@@ -20,28 +20,101 @@ hr {
 /*NAVIGATION*/
 .nav { 
     grid-area: nav;
-}
-
-.nav ul {
-    float: right;
-}
-
-.nav ul li {
-    display: inline;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
     padding: 20px;
 }
 
+i.mobile-toggle {
+    display: block;
+    font-size: 30px;
+    /* margin-left: auto; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    list-style: none; /*remove ul bullet points*/
+    padding-left: 0;
+}
+
+.mobile-nav li {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+  }
+
+.mobile-nav a { 
+    text-decoration: none; /*remove text underline*/
+    color: black;
+}
+
+.mobile-nav.active {
+    display: block;
+  }
+
+/* 
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mobile-nav li {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .mobile-nav a {
+    display: block;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .mobile-nav a:hover {
+    background-color: #f6f6f6;
+  }
+
+i.mobile-toggle {
+    display: block;
+}
+
+i.mobile-toggle.active + .mobile-nav {
+    display: block !important;
+  } */
 
 .header { 
     grid-area: header;
-    text-align: center;
 }
 
 .main { 
     grid-area: about;
 }
 
-.about, .videos, .articles, .aside, .main, .footer {
+.header, .about, .videos, .articles, .aside, .main, .footer {
     text-align: center;
     margin-bottom: 40px;
 }
@@ -65,7 +138,7 @@ hr {
 
 .grid-container {
     display: grid;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     grid-template-areas: 
     'nav nav nav nav nav nav'
     'header header header header header header'
@@ -76,10 +149,10 @@ hr {
     'footer footer footer footer footer footer';
 }
 
-.grid-container > .grid-item {
+/* .grid-container > .grid-item {
     border: 1px solid green;
     padding: 20px;
-}
+} */
 
 .resources, .reviews, .asideBox {
     background-color: orange;
@@ -161,6 +234,7 @@ h2 {
 /*Media query break point - small/ some large mobiles - 480px
 Body text: 16px or larger
 Headings: 20px or larger
+Navigation: still mobile hamburger
 */
 
 @media (min-width: 480px) {
@@ -171,6 +245,8 @@ Headings: 20px or larger
 /*Media query break point - tablets/ some smaller desktops - 768px
 Body text: 18px or larger
 Headings: 24px or larger
+Navigation: either mobile hamburger or full width
+Adjust video alignment on homepage
 */
 
 @media (min-width: 768px) {
@@ -182,10 +258,34 @@ Headings: 24px or larger
 /*Media query break point - larger desktops/ some smaller laptops - 992px
 Body text: 20px or larger
 Headings: 28px or larger
+Navigation: full width
+Videos: adjust to full width, 2 in a row or keep 1 in a row?
+Articles: adjust listing on homepage to 2 in a row
 */
 
 @media (min-width: 992px) {
     
+/*NAVIGATION*/
+
+i.mobile-toggle {
+    display: none;
+}
+
+.mobile-nav {
+    display: inline;
+    top: 0;
+    background-color: transparent;
+    text-align: right;
+}
+
+/* .nav ul {
+    float: right;
+} */
+
+.nav ul li {
+    display: inline;
+    padding: 20px;
+}
 }
 
 
@@ -193,6 +293,9 @@ Headings: 28px or larger
 /*Media query break point - larger laptops/ desktops - 1200px
 Body text: 22px or larger
 Headings: 32px or larger
+Videos: adjust to 2 or 3 in a row
+Articles: adjust to 3 or 4 in a row
+Aside: adjust to 2 or 3 in a row
 */
 
 @media (min-width: 1200px) {
