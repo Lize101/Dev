@@ -108,6 +108,11 @@ i.mobile-toggle.active + .mobile-nav {
 
 .header { 
     grid-area: header;
+    height: 50vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 150px;
 }
 
 .main { 
@@ -286,7 +291,24 @@ i.mobile-toggle {
     display: inline;
     padding: 20px;
 }
+
+.aside {
+    margin: 0 auto;
+    width: 992px;
 }
+
+.resources, .reviews {
+    background-color: pink;
+    float: left;
+    padding: 5%;
+    width: 39%;
+    margin-right: 0;
+    margin-left: 1%;
+}
+
+}
+
+
 
 
 
