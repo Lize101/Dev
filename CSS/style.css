@@ -347,6 +347,17 @@ i.mobile-toggle {
     gap: 10px;
 }
 
+.surroundArticleImg {
+    float: left;
+    margin-left: 10%;
+    width: 400px;
+    height: 200px;
+}
+
+.surroundArticleText {
+    margin-bottom: 70px;
+}
+
 /*GENERAL*/
 hr {
     display: none;
