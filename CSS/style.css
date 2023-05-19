@@ -316,16 +316,15 @@ i.mobile-toggle {
 
 .aside {
     margin: 0 auto;
-    width: 992px;
+    width: 100%;
 }
 
-.resources, .reviews {
+.resources, .reviews, .article, .aboutVideos {
     background-color: pink;
     float: left;
     padding: 5%;
     width: 39%;
-    margin-right: 0;
-    margin-left: 1%;
+    margin: 0.5%;
 }
 
 /*TEXT*/
