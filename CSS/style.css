@@ -106,6 +106,8 @@ i.mobile-toggle.active + .mobile-nav {
     display: block !important;
   } */
 
+
+/*SECTIONS*/
 .header { 
     grid-area: header;
     height: 50vh;
@@ -159,13 +161,14 @@ i.mobile-toggle.active + .mobile-nav {
     padding: 20px;
 } */
 
+
+/*ASIDE BOXES*/
 .resources, .reviews, .asideBox {
     background-color: orange;
     margin-bottom: 50px;
     height: 200px;
     padding: 60px 0;
 }
-
 
 /*VIDEOS*/
 
@@ -345,14 +348,12 @@ i.mobile-toggle {
     gap: 10px;
 }
 
+/*GENERAL*/
 hr {
     display: none;
 }
 
 }
-
-
-
 
 
 /*Media query break point - larger laptops/ desktops - 1200px
@@ -378,13 +379,12 @@ Aside: adjust to 2 or 3 in a row
 }
     
 /*IMAGES*/
-    .resources-bgImg1:hover {
-        background-image: url(/images/test2.png);
-        width: 40%;
-    }
+.resources-bgImg1:hover {
+    background-image: url(/images/test2.png);
+    width: 40%;
+}
 
 /*VIDEOS*/
-
 .videoframes { 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -402,7 +402,6 @@ Aside: adjust to 2 or 3 in a row
 }
 
 /*ARTICLES*/
-
 .articleframes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -410,8 +409,8 @@ Aside: adjust to 2 or 3 in a row
     gap: 20px;
 }
 
-hr {
+/* hr {
     display: none;
-}
+} */
 
 }
